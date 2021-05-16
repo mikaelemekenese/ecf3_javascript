@@ -30,9 +30,14 @@ h1 {
 
 #list {
     display: grid;
-    grid-template-columns: 30% 30% 20% 20%;
+    grid-template-columns: 40% 40% 20%;
     row-gap: 10px;
-    width: 60%;
+    width: 50%;
+}
+
+.modal-header {
+    display: grid;
+    grid-auto-flow: row;
 }
 
 #modalBody {

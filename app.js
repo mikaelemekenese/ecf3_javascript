@@ -21,8 +21,7 @@ function employeesList(employees) {
         list.innerHTML +=
             '<span id="td">' + employees[i].name + '</span>' +
             '<span>' + employees[i].last_name + '</span>' +
-            '<span><button type="button" id="viewMore' + employees[i].id + '" onclick=btnInfo(' + employees[i].id + ') name="view" class="btn btn-primary" data-toggle="modal" data-target="#infoModal">View Info</button></span>' + 
-            '<span><button type="button" id="btnDelete" class="btn btn-danger" onclick = btnDelete(' + employees[i].id + ',this) >Delete</button></span>';
+            '<span><button type="button" id="viewMore' + employees[i].id + '" onclick=btnInfo(' + employees[i].id + ') name="view" class="btn btn-primary" data-toggle="modal" data-target="#infoModal">View Info</button></span>';
     };
 };
 
@@ -50,7 +49,7 @@ function employeeData(employees) {
     document.getElementById("modalEmail").value = employees.email;
 
     var modalFooter = document.getElementById("modalFooter");
-    modalFooter.innerHTML = '<button type="button" class="btn btn-success" onclick="btnEdit(' + employees.id + ')">Save Edit</button>' + '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>';
+    modalFooter.innerHTML = '<button type="button" class="btn btn-success" onclick="btnEdit(' + employees.id + ')">Save Edit</button>' + '<span><button type="button" id="btnDelete" class="btn btn-danger" onclick = btnDelete(' + employees.id + ',this) >Delete</button></span>' + '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>';
 };
 
 
