@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    padding: 50px;
+}
+
+.add-employee {
+    padding: 10px;
+}
+
+.form-row {
+    padding: 10px;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 30% 30% 20% 20%;
+    row-gap: 10px;
+    width: 60%;
+}
+
+#modalBody {
+    width: 100%;
+}
